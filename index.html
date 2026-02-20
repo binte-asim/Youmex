@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoumEx - Delivering Trust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+    <div class="logo">
+        <img src="logo.jpeg" alt="YoumEx Logo">
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="#">Why YoumEx</a></li>
+        <li><a href="#">Freight</a></li>
+        <li><a href="#">E-commerce</a></li>
+        <li><a href="#">Sourcing</a></li>
+        <li><a href="#">More...</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-content">
+    <h1>DELIVER <br> <span>WITH TRUST</span></h1>
+    <div class="divider"></div>
+    <p>Smart logistics solutions at express speed.</p>
+    <a href="#" class="btn-learn">GET STARTED</a>
+</div>
+    </section>
+    <section class="hero-alt">
+    <div class="hero-container">
+        <div class="hero-text-side">
+            <h1>YOUR <br>LOGISTICS PARTNER</h1>
+            <div class="accent-line"></div>
+            <p>Streamlining supply chains with innovative tech and a trusted global network, powered by YoumEx.</p>
+            <a href="#" class="btn-orange">REQUEST A QUOTE</a>
+            
+        </div>
+
+        <div class="hero-image-side">
+            <img src="pic 1.jpg" alt="Global Shipping" class="main-ship-img">
+        </div>
+    </div>
+</section>
+<section class="premium-services">
+    <div class="container">
+        <div class="header-content">
+            <span class="sub-title">WHAT WE DO</span>
+            <h2 class="main-title">ELITE LOGISTICS <span>SOLUTIONS</span></h2>
+            <div class="styled-divider"></div>
+        </div>
+
+        <div class="services-wrapper">
+            <div class="service-box">
+                <div class="service-icon">
+                    <img src="image.png" alt="Ground Transport">
+                </div>
+                <h3>Ground Transportation</h3>
+                <p>Fast and secure inland delivery across the region with real-time tracking.</p>
+                <div class="hover-line"></div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <img src="image copy.png" alt="Warehousing">
+                </div>
+                <h3>Warehousing</h3>
+                <p>Climate-controlled and secure storage solutions for your valuable goods.</p>
+                <div class="hover-line"></div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <img src="image copy 2.png" alt="Customs">
+                </div>
+                <h3>Customs Brokerage</h3>
+                <p>Hassle-free documentation and legal clearance for your shipments.</p>
+                <div class="hover-line"></div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <img src="image copy 3.png" alt="Last Mile">
+                </div>
+                <h3>Last Mile Delivery</h3>
+                <p>Direct-to-door services ensuring your packages reach their final destination.</p>
+                <div class="hover-line"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script>
+   
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    document.onclick = function(e){
+        if(!hamburger.contains(e.target) && !navLinks.contains(e.target)){
+            navLinks.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
