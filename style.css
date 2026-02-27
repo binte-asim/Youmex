@@ -1086,7 +1086,7 @@ top: -160px;
         justify-content: center;
     }
 
-    .hero-content h1 {
+    .hero-content2 h1 {
         font-size: clamp(35px, 8vw, 55px); /* Choti screen par khud chota hojayega */
         line-height: 1.2;
         letter-spacing: 1px;
@@ -1097,7 +1097,7 @@ top: -160px;
         width: 100px;
     }
 
-    .hero-content p {
+    .hero-content2 p {
         font-size: 16px;
         margin-bottom: 25px;
     }
