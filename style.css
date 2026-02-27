@@ -57,14 +57,14 @@ body {
     position: relative;
 }
 
-.hero-content h1 {
+.hero-content2 h1 {
     font-size: 80px;
     line-height: 1.1;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.hero-content span {
+.hero-content2 span {
     color: #ffffff;
 }
 
@@ -75,7 +75,7 @@ body {
     margin: 25px 0;
 }
 
-.hero-content p {
+.hero-content2 p {
     font-size: 18px;
     margin-bottom: 35px;
     line-height: 1.6;
@@ -782,6 +782,242 @@ body {
     font-size: 13px;
     color: #64748b;
 }
+.why-youmex {
+    padding: 100px 5%;
+    background-color: #ffffff;
+}
+.hero-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 550px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+/* Visual Styling */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.globe-container {
+    position: relative;
+    left: -90px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.main-globe {
+    width: 700px;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+}
+
+/* Content Styling */
+.hero-content {
+    flex: 1;
+}
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #ff5e14; /* Brand Orange */
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    color: #1b202e;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 span {
+    font-weight: 400;
+    color: #475569;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+.detail-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.highlight-box {
+    border-left: 4px solid #ff5e14;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.highlight-box h3 {
+    font-size: 20px;
+    color: #1b202e;
+    margin-bottom: 10px;
+}
+.fulfillment-section {
+    padding: 100px 5%;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.fulfillment-wrapper {
+    position: relative;
+    top: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.fulfillment-content {
+    flex: 1.2;
+}
+
+.content-block {
+    margin-bottom: 50px;
+}
+
+.content-block h2 {
+    font-size: 34px;
+    color: #1b202e;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.content-block h2 span {
+    font-weight: 400;
+    color: #475569;
+}
+
+.short-line {
+    width: 40px;
+    height: 3px;
+    background-color: #ff5e14; /* Brand Orange */
+    margin: 15px 0;
+}
+
+.content-block p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #556070;
+    margin-bottom: 15px;
+}
+
+/* Image Side */
+.fulfillment-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 700px;
+    max-width: 500px;
+    height: auto;
+    /* Isometric look focus */
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.08));
+    animation: floatTruck 5s ease-in-out infinite;
+}
+
+@keyframes floatTruck {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.solutions-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+.solutions-section .container{
+position: relative;
+top: -160px;
+}
+.section-title {
+    font-size: 36px;
+    color: #1b202e;
+    font-weight: 500; /* As per image style */
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.solutions-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 1250px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.solution-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px); /* Subtle hover effect */
+}
+
+.solution-icon img {
+    width: 100%;
+    max-width: 320px; /* Adjust based on your icons */
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+}
+
+.solution-footer {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accent-line {
+    width: 80px;
+    height: 2px;
+    background-color: #1b202e; /* Dark blue/black line */
+    margin-bottom: 15px;
+}
+
+.solution-footer h3 {
+    font-size: 18px;
+    color: #1b202e;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
 @media (min-width: 300px) and (max-width: 1250px) {
     
     .navbar {
@@ -1014,7 +1250,7 @@ body {
 
     .sourcing-title {
         position: relative;
-        left: 10px;
+        left: 7px;
         font-size: 26px;
         margin-bottom: 40px;
     }
@@ -1136,6 +1372,160 @@ body {
         border-top: 1px solid rgba(255, 255, 255, 0.05);
         margin-top: 40px;
     }
+    .why-youmex {
+        padding: 60px 5%; /* Padding kam kar di mobile ke liye */
+    }
+
+    .hero-grid {
+        flex-direction: column; /* Row ko column mein badal diya */
+        top: 0; /* Negative offset hata diya taake spacing natural lage */
+        gap: 40px;
+        text-align: center; /* Poora content center align */
+    }
+
+    /* Visual Adjustment */
+    .hero-visual {
+        width: 100%;
+        order: 1; /* Image pehle dikhegi */
+    }
+
+    .globe-container {
+        left: 0; /* Negative left hata diya */
+        margin: 0 auto;
+        max-width: 100%; /* Full width container */
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-globe {
+        width: 100%; /* Globe screen ke bahar nahi jayega */
+        max-width: 500px; /* Tablet par boht bara na ho */
+        height: auto;
+    }
+
+    /* Content Adjustment */
+    .hero-content {
+        width: 100%;
+        order: 2; /* Text image ke niche aayega */
+    }
+
+    .hero-content h1 {
+        font-size: clamp(28px, 7vw, 36px); /* Responsive font size */
+        margin-bottom: 20px;
+    }
+
+    .hero-content p, 
+    .intro-text, 
+    .detail-text {
+        font-size: 16px;
+        max-width: 600px; /* Reading ease ke liye line length control */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .highlight-box {
+        border-left: none; /* Mobile par side border ki jagah top border behtar hai */
+        border-top: 3px solid #ff5e14;
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .highlight-box h3 {
+        font-size: 18px;
+    }
+
+    .fulfillment-section {
+        padding: 60px 5%; /* Spacing adjusted for smaller screens */
+    }
+
+    .fulfillment-wrapper {
+        flex-direction: column; /* Content stack vertically */
+        top: 0; /* Reset negative offset for mobile flow */
+        gap: 40px;
+        text-align: center; /* Center align for a balanced look */
+    }
+
+    /* Content Side Adjustments */
+    .fulfillment-content {
+        width: 100%;
+        order: 1; /* Content pehle nazar aaye */
+    }
+
+    .content-block {
+        margin-bottom: 40px;
+    }
+
+    .content-block h2 {
+        /* Screen size ke hisab se font scale hoga */
+        font-size: clamp(24px, 6vw, 30px); 
+        margin: 0 auto;
+    }
+
+    .short-line {
+        margin: 15px auto; /* Line center alignment */
+    }
+
+    .content-block p {
+        font-size: 16px; /* Optimized reading size for mobile */
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Image Side Adjustments */
+    .fulfillment-visual {
+        width: 100%;
+        order: 2; /* Image text ke niche aaye */
+    }
+
+    .image-container img {
+     display: none;
+    }
+    .solutions-section {
+        position: relative;
+        top: 0px; /* Mobile par negative offset khatam taake layout kharab na ho */
+        padding: 60px 20px;
+        background-image: none; /* Mobile par clean white look behtar hai */
+    }
+
+    .section-title {
+        font-size: clamp(24px, 5vw, 30px); /* Responsive font size */
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .solutions-grid {
+        flex-direction: column; /* Row se Column mein shift */
+        align-items: center;
+        gap: 40px; /* Har card ke darmiyan munasib gap */
+    }
+
+    .solution-card {
+        width: 100%;
+        max-width: 450px;
+        order: initial; /* Isometric icons pehle hi top par hain */
+    }
+
+    .solution-icon img {
+        max-width: 260px; /* Mobile screens ke liye icon size chota kiya */
+        filter: drop-shadow(0 5px 15px rgba(0,0,0,0.08));
+    }
+
+    .solution-footer {
+        margin-top: 20px;
+    }
+
+    .accent-line {
+        width: 60px; /* Line thodi choti taake text ke sath balanced lage */
+        margin-bottom: 12px;
+    }
+
+    .solution-footer h3 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
 }
+
 
 
